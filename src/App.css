@@ -1,0 +1,364 @@
+/* Add this to the top of your CSS file */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+/* Use the font in your CSS */
+body {
+  font-family: "Merriweather", serif;
+  margin-top: 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Style for the heading */
+.login-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Style for form groups */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Style for labels */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Style for input fields */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Style for the login button */
+.login-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+/* Main container for everything on the page */
+.container {
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 10px auto; /* Center the container horizontally */
+  padding: 20px; /* Padding inside the container */
+  background-color: #ffffff; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+  font-family: Arial, sans-serif; /* Font for the container */
+}
+
+.container-half {
+  width: 50%; /* Full width */
+  min-width: 600px; /* Maximum width for larger screens */
+}
+
+.container-quarter {
+  width: 25%; /* Full width */
+  min-width: 300px; /* Maximum width for larger screens */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px; /* Further reduce padding on very small screens */
+  }
+}
+.basic-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.basic-input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+/* styles.css */
+.button {
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #ccc;
+}
+.button-blue {
+  background-color: #2196f3; /* Material blue */
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: #0d47a1; /* Darker shade of blue */
+}
+
+.button-green {
+  background-color: #4caf50; /* Material green */
+  color: white;
+}
+
+.button-green:hover {
+  background-color: #388e3c; /* Darker shade of green */
+}
+
+.button-red {
+  background-color: #f44336; /* Material red */
+  color: white;
+}
+
+.button-red:hover {
+  background-color: #d32f2f; /* Darker shade of red */
+}
+
+.button-yellow {
+  background-color: #faaf4c; /* Material yellow */
+  color: white;
+}
+
+.button-yellow:hover {
+  background-color: #db9943; /* Darker shade of yellow */
+}
+
+.button-purple {
+  background-color: #9c27b0; /* Material purple */
+  color: white;
+}
+
+.button-purple:hover {
+  background-color: #7b1fa2; /* Darker shade of purple */
+}
+
+.button-white {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.button-white:hover {
+  background-color: #f0f0f0;
+}
+
+/* Define a class for the error message */
+.error-message {
+  color: red; /* Red color to indicate an error */
+  background-color: #ffe6e6; /* Light red background for better visibility */
+  padding: 10px; /* Padding for some space around the text */
+  border-radius: 5px; /* Rounded corners for a smoother look */
+  font-weight: bold; /* Bold text to emphasize the error */
+  margin-bottom: 0px; /* Margin on top to space it out from other elements */
+}
+
+.logo-item {
+  margin-right: 20px; /* Adds space to the right of the logo */
+}
+
+.logo {
+  width: 120px; /* Adjust to your preferred size */
+  height: auto; /* Maintains aspect ratio */
+}
+/* Regular link style */
+.custom-link {
+  color: #007bff; /* Nice blue color */
+  text-decoration: none; /* Remove underline */
+  font-weight: normal; /* Regular font weight */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Visited link style */
+.custom-link:visited {
+  color: #007bff; /* Nice purple color for visited links */
+}
+
+/* Hover link style */
+.custom-link:hover {
+  color: #0056b3; /* Slightly darker blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Active link style */
+.custom-link:active {
+  color: #d63384; /* Nice pink color when the link is active */
+}
+
+/* NavbarItems.css */
+/* Container for the navbar */
+.navbar-container {
+  width: 100%;
+  background-color: #ffffff; /* White background for the navbar */
+  border-bottom: 1px solid #e0e0e0; /* Subtle border at the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar styling */ /* Container for the navbar */
+.navbar-container {
+  width: 100%;
+  background-color: #ffffff; /* White background for the navbar */
+  border-bottom: 1px solid #e0e0e0; /* Subtle border at the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Space between logo and menu items */
+}
+
+/* Logo item */
+.logo-item {
+  margin-left: 20px; /* Adds space to the right of the logo */
+}
+
+.logo {
+  width: 120px; /* Adjust to your preferred size */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Menu toggle button */
+.menu-toggle {
+  display: none; /* Hide by default */
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 24px; /* Large font size for visibility */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Navigation items */
+.nav-items {
+  list-style-type: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Aligns items vertically */
+  background-color: #ffffff; /* White background */
+}
+
+.nav-item {
+  list-style-type: none; /* Remove default list styling */
+  margin: 10px 15px; /* Spacing between items */
+  padding: 10px 15px; /* Padding for a clickable area */
+  border-radius: 5px; /* Rounded corners for items */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-item button {
+  padding: 10px 20px; /* Add padding for the button */
+  background-color: #ffffff; /* White background */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* For positioning the underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-item button::after {
+  content: ""; /* Empty content for the underline */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Align to the left */
+  bottom: -2px; /* Place it just below the button */
+  width: 0; /* Start with zero width */
+  height: 2px; /* Set the height for the underline */
+  background-color: #faaf4c; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth transition for the underline */
+}
+
+.nav-item button:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the menu toggle button */
+  }
+
+  .nav-items {
+    display: none; /* Hide navigation items by default */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position the menu */
+    top: 100%; /* Below the navbar */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #ffffff; /* White background */
+    border-top: 1px solid #e0e0e0; /* Subtle border at the top */
+    box-shadow: 0 2px 4px rgba(186, 3, 3, 0.1); /* Soft shadow for depth */
+    z-index: 1; /* Above other content */
+  }
+
+  .nav-items.open {
+    display: flex; /* Show navigation items when menu is open */
+  }
+
+  .nav-item {
+    margin: 0; /* Remove margin */
+    padding: 15px; /* Add padding */
+    border-bottom: 1px solid #e0e0e0; /* Border between items */
+  }
+}
+
+.blog-card-image {
+  max-width: 90%;
+  height: 250px;
+}
+
+.top-bar {
+  background-color: #faaf4c; /* Dark green background */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Vertical padding */
+  font-size: 16px; /* Font size */
+  margin-top: 0;
+}
