@@ -8,11 +8,14 @@ const Blogs = () => {
 
   return (
     <div>
-      {blogs.map((blog) => (
-        <Container className="container-half" key={blog.$id}>
-          <BlogCard blog={blog} />
-        </Container>
-      ))}
+      {blogs.map(
+        (blog) =>
+          blog.status === "active" && (
+            <Container className="container-half" key={blog.$id}>
+              <BlogCard blog={blog} />
+            </Container>
+          )
+      )}
     </div>
   );
 };

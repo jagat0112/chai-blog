@@ -42,11 +42,15 @@ class Service {
     );
   }
   async deletePost(slug) {
-    await this.database.updateDocument(
-      config.appWriteDatabaseId,
-      config.appWriteCollectionId,
-      slug
-    );
+    try {
+      return await this.database.deleteDocument(
+        config.appWriteDatabaseId,
+        config.appWriteCollectionId,
+        slug
+      );
+    } catch (error) {
+      throw error;
+    }
   }
 
   async getDocument(slug) {
@@ -57,7 +61,7 @@ class Service {
     );
   }
 
-  async getDocuments(queries = [Query.equal("status", "active")]) {
+  async getDocuments(queries = []) {
     return await this.database.listDocuments(
       config.appWriteDatabaseId,
       config.appWriteCollectionId,

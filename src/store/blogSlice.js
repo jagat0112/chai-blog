@@ -7,7 +7,7 @@ const blogSlice = createSlice({
   initialState,
   reducers: {
     getPosts: (state, action) => {
-      state.blogs = action.payload;
+      action.payload.map((item) => state.blogs.unshift(item));
     },
     getPost: (state, action) => {
       state.blog = action.payload;

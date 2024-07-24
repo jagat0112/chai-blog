@@ -4,5 +4,6 @@ import Navbar from "./navbar";
 import User from "./user/User";
 import BlogItem from "./blog/BlogItem";
 import Home from "./Home";
+import ManagePosts from "./manage/ManagePosts";
 
-export { LoginPage, RegisterPage, Navbar, User, BlogItem, Home };
+export { ManagePosts, LoginPage, RegisterPage, Navbar, User, BlogItem, Home };

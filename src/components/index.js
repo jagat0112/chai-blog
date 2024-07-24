@@ -5,6 +5,7 @@ import Container from "./container/Container";
 import Header from "./header/header";
 import Input from "./header/input";
 import Errors from "./header/Errors";
+import SkeletonLoader from "./loading/SkeletonLoader";
 
 export {
   logoutBtn,
@@ -14,4 +15,5 @@ export {
   footer as Footer,
   Container,
   Header,
+  SkeletonLoader,
 };

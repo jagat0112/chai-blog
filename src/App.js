@@ -12,21 +12,18 @@ import {
   Navbar,
   User as Profile,
   BlogItem,
+  ManagePosts,
   Home,
 } from "./pages/index";
 
 function App() {
   const dispatch = useDispatch();
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     try {
-      authService
-        .getCurrentUser()
-        .then((userData) => {
-          userData ? dispatch(login(userData)) : dispatch(logout());
-        })
-        .finally(() => setLoading(false));
+      authService.getCurrentUser().then((userData) => {
+        userData ? dispatch(login(userData)) : dispatch(logout());
+      });
     } catch (error) {
       console.log(error);
     }
@@ -51,6 +48,7 @@ function App() {
         <Route Component={Home} path="/" />
         <Route Component={BlogItem} path="/blog/:id" />
         <Route Component={Profile} path="/profile/:id" />
+        <Route Component={ManagePosts} path="/manage/posts/:id" />
       </Routes>
     </BrowserRouter>
   );

@@ -26,7 +26,7 @@ const PostForm = () => {
     } else {
       featuredImage = null;
     }
-    userId = userId.auth.userData.$id;
+    userId = userId.auth.userData?.$id;
     const res = service.createPost({
       userId,
       content,
@@ -65,7 +65,7 @@ const PostForm = () => {
         <Input
           type="file"
           className="file-input"
-          accept=".jpg,.png,.webp"
+          accept=".jpg,.png,.webp,.jpeg"
           {...register("featuredImage")}
         />
         <div className="publish-checkbox">

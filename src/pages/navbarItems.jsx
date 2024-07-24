@@ -10,7 +10,7 @@ const NavbarItems = () => {
   const navItems = [
     { name: "Home", to: "/", active: status },
     { name: "Notifications", to: "/", active: status },
-    { name: "Messages", to: "/", active: status },
+    { name: "Manage", to: `/manage/posts/${userData?.$id}`, active: status },
     { name: "Profile", to: `/profile/${userData?.$id}`, active: status },
     { name: "Login", to: "/login", active: !status },
     { name: "Register", to: "/register", active: !status },

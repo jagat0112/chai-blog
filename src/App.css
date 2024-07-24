@@ -1,10 +1,17 @@
 /* Add this to the top of your CSS file */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
-
-/* Use the font in your CSS */
 body {
-  font-family: "Merriweather", serif;
-  margin-top: 0;
+  font-family: "Lato", sans-serif; /* Apply to body text */
+  background-color: #fff8e1; /* Cream background */
+  color: #333; /* Dark grey text for readability */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif; /* Apply to headings */
 }
 
 .login-container {
@@ -361,4 +368,12 @@ body {
   padding: 10px 0; /* Vertical padding */
   font-size: 16px; /* Font size */
   margin-top: 0;
+}
+/* Profile.css */
+.prompt-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
 }

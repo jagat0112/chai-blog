@@ -1,0 +1,63 @@
+/* SkeletonLoader.css */
+.skeleton-loader {
+  max-width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  background-color: #f5f8fa;
+}
+
+.skeleton-header,
+.skeleton-title,
+.skeleton-input,
+.skeleton-checkbox,
+.skeleton-button {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-header {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.skeleton-title {
+  height: 30px;
+  width: 98%;
+  margin-bottom: 10px;
+}
+
+.skeleton-input {
+  height: 40px;
+  width: 98%;
+  margin-bottom: 10px;
+}
+
+.skeleton-checkbox {
+  height: 25px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.skeleton-button {
+  height: 40px;
+  width: 50%;
+  background-color: #1da1f2; /* Match the button color */
+}
+
+/* Adding a pulse animation */
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f5f5f5;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
