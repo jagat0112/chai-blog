@@ -12,7 +12,8 @@
 }
 
 .blog-post-image {
-  max-width: 100%;
+  object-fit: cover;
+  width: 90%;
   height: auto;
   max-height: 400px;
   margin-bottom: 20px;
