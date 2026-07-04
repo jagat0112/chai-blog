@@ -84,6 +84,30 @@
   background-color: var(--color-danger-dark);
 }
 
+.update-button:disabled,
+.delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.post-edit-row {
+  list-style: none;
+  padding: 0;
+  margin: -4px 0 4px;
+}
+
+.post-edit-row .container {
+  margin: 0;
+  max-width: 100%;
+}
+
+.manage-posts .empty-state {
+  border: none;
+  box-shadow: none;
+  padding: 12px 0 0;
+  margin: 0;
+}
+
 @media (max-width: 560px) {
   .post-item {
     flex-wrap: wrap;

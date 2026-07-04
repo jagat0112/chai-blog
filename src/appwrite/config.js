@@ -23,7 +23,7 @@ class Service {
     author,
   }) {
     try {
-      await this.database.createDocument(
+      return await this.database.createDocument(
         config.appWriteDatabaseId,
         config.appWriteCollectionId,
         slug,
@@ -34,7 +34,7 @@ class Service {
     }
   }
   async updatePost(slug, { title, content, featuredImage, status, userId }) {
-    await this.database.updateDocument(
+    return await this.database.updateDocument(
       config.appWriteDatabaseId,
       config.appWriteCollectionId,
       slug,

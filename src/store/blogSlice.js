@@ -13,10 +13,20 @@ const blogSlice = createSlice({
       state.blog = action.payload;
     },
     addPost: (state, action) => {
-      state.blog = action.payload;
+      state.blogs.unshift(action.payload);
+    },
+    removePost: (state, action) => {
+      state.blogs = state.blogs.filter((blog) => blog.$id !== action.payload);
+    },
+    editPost: (state, action) => {
+      const index = state.blogs.findIndex(
+        (blog) => blog.$id === action.payload.$id
+      );
+      if (index !== -1) state.blogs[index] = action.payload;
     },
   },
 });
 
-export const { getPost, getPosts, addPost } = blogSlice.actions;
+export const { getPost, getPosts, addPost, removePost, editPost } =
+  blogSlice.actions;
 export default blogSlice.reducer;

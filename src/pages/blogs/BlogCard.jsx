@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Images from "../../components/header/Images";
+import readingTime from "../../utils/readingTime";
 
 const BlogCard = ({ blog }) => {
   return (
     <div className="blog-card">
       <div className="blog-card-header">
         <Images
-          src={blog.featuredImage}
           alt={blog.title}
           className="blog-card-image"
           fileId={blog.featuredImage}
@@ -21,7 +21,8 @@ const BlogCard = ({ blog }) => {
         <div className="blog-card-footer">
           <span className="blog-card-status">Author: {blog.author}</span>
           <p className="blog-card-date">
-            Created on: {new Date(blog.$createdAt).toLocaleDateString()}
+            {new Date(blog.$createdAt).toLocaleDateString()} ·{" "}
+            {readingTime(blog.content)}
           </p>
         </div>
       </div>

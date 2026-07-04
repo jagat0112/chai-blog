@@ -6,6 +6,7 @@ import { getPosts } from "./store/blogSlice";
 import service from "./appwrite/config";
 import authService from "./appwrite/auth";
 import "./App.css";
+import { Footer } from "./components";
 import {
   LoginPage,
   RegisterPage,
@@ -14,6 +15,7 @@ import {
   BlogItem,
   ManagePosts,
   Home,
+  NotFound,
 } from "./pages/index";
 
 function App() {
@@ -40,14 +42,18 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route Component={LoginPage} path="/login" />
-        <Route Component={RegisterPage} path="/register" />
-        <Route Component={Home} path="/" />
-        <Route Component={BlogItem} path="/blog/:id" />
-        <Route Component={Profile} path="/profile/:id" />
-        <Route Component={ManagePosts} path="/manage/posts/:id" />
-      </Routes>
+      <main className="site-main">
+        <Routes>
+          <Route Component={LoginPage} path="/login" />
+          <Route Component={RegisterPage} path="/register" />
+          <Route Component={Home} path="/" />
+          <Route Component={BlogItem} path="/blog/:id" />
+          <Route Component={Profile} path="/profile/:id" />
+          <Route Component={ManagePosts} path="/manage/posts/:id" />
+          <Route Component={NotFound} path="*" />
+        </Routes>
+      </main>
+      <Footer />
     </BrowserRouter>
   );
 }

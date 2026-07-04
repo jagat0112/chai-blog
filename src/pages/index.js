@@ -5,5 +5,15 @@ import User from "./user/User";
 import BlogItem from "./blog/BlogItem";
 import Home from "./Home";
 import ManagePosts from "./manage/ManagePosts";
+import NotFound from "./notfound/NotFound";
 
-export { ManagePosts, LoginPage, RegisterPage, Navbar, User, BlogItem, Home };
+export {
+  ManagePosts,
+  LoginPage,
+  RegisterPage,
+  Navbar,
+  User,
+  BlogItem,
+  Home,
+  NotFound,
+};
