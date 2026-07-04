@@ -1,0 +1,97 @@
+.manage-posts {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.manage-posts h2 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.post-item:hover {
+  border-color: var(--color-primary-soft);
+  box-shadow: var(--shadow-sm);
+}
+
+.post-title {
+  flex-grow: 1;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.post-status {
+  margin-right: 20px;
+  font-size: 13px;
+  font-style: normal;
+  color: var(--color-text-muted);
+}
+
+.post-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.update-button,
+.delete-button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.update-button {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.update-button:hover {
+  background-color: var(--color-success-dark);
+}
+
+.delete-button {
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: var(--color-danger-dark);
+}
+
+@media (max-width: 560px) {
+  .post-item {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .post-title {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}

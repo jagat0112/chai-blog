@@ -1,0 +1,70 @@
+.post-form-container h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.post-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-input,
+.post-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.title-input:focus,
+.post-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.post-input {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.file-input {
+  border: none;
+  padding: 8px 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.publish-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.publish-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  margin: 0;
+}
+
+.blog-link {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+}
