@@ -5,7 +5,7 @@ const Images = ({ fileId, className }) => {
   const [img, setImg] = useState("");
   useEffect(() => {
     service.previewFile(fileId).then((res) => setImg(res));
-  }, []);
+  }, [fileId]);
 
   return <img className={`image ${className}`} src={img.href} alt=""></img>;
 };

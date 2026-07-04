@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login, logout } from "./store/authSlice";
@@ -26,7 +26,7 @@ function App() {
         userData ? dispatch(login(userData)) : dispatch(logout());
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     service
@@ -35,7 +35,7 @@ function App() {
         dispatch(getPosts(documents));
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [dispatch]);
 
   return (
     <BrowserRouter>
